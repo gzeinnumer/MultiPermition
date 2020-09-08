@@ -148,6 +148,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void onSuccessCheckPermitions() {
 
+        Toast.makeText(this, "All Granted", Toast.LENGTH_SHORT).show();
         //letakan action kamu disini
         
     }
@@ -156,9 +157,8 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 **notes.** 
-  - `appName` adalah nama folder  yang akan dibuat didalam penyimpanan kamu.
-  - `logLocation` adalah nama folder yang akan dibuat didalam `appName` penyimpanan kamu untuk menyimpan file log yang akan dibuat.
-  - Panggil function ini hanya sekali saja, setelah permition diberikan, kamu tidak perlu menggunakan function ini sering.
+  - Cara ini akan saya pakai disetiap lib yang saya buat dan membutuhkan permition.
+  - Di function `onSuccessCheckPermitions` kita bisa deklarasi apa saja yang kita mau.
   
 #
 **Step 6.**
