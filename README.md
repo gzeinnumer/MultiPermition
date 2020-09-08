@@ -4,6 +4,8 @@
 
 **Contoh Multi Check Permissions.** Request permition secara bersamaan, Zein sarankan untuk requestnya dijalankan di activity yang pertama aktif, disini Zein masukan ke MainActivity :
 
+#
+**Step 1.**
 **Manifest.** Tambahkan permition ke file manifest. Zein sarankan untuk menambahkan requestLegacyExternalStorage=true jika android kamu sudah android 10.
 
 ```xml
@@ -22,7 +24,7 @@
 
 
 #
-**Step 1.**
+**Step 2.**
 \
 Tambahkan array permition yang dibutuhkan :
 
@@ -42,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 #
-**Step 2.**
+**Step 3.**
 \
 Tambahkan function untuk mengecek permition apps apakah semua permition sudah diberikan izin, Jika belum diberikan izin maka akan keluar popup. Silahkan berikan izin dengan menekan `allow` :
 
@@ -75,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 #
-**Step 3.**
+**Step 4.**
 \
 Jika semua akses sudah diberikan maka aplikasi dapat menjalankan proses untuk membuat directory :
 
@@ -107,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 #
-**Step 4.** 
+**Step 5.** 
 \
 Buat dan panggil function `onSuccessCheckPermitions` untuk membuat folder :
 
@@ -137,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 #
-**Step 5.**
+**Step 6.**
 \
 Jika `onRequestPermissionsResult` sudah mendapat permition yang dibutuhkan, maka kita akan membuat dan menjalankan function `onSuccessCheckPermitions`. **Cukup 1 kali penggunaan saja di FirstActivity(Acctivity yang pertama berjalan)**:
 
@@ -161,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
   - Di function `onSuccessCheckPermitions` kita bisa deklarasi apa saja yang kita mau.
   
 #
-**Step 6.**
+**Step 7.**
 \
 Tambahkan function `checkPermissions` di `onCreate` agar setiap activity dijalankan maka akan selalu mengecek apakah izin sudah diberikan :
 
@@ -191,7 +193,7 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 #
-**Step 7.**
+**Step 8.**
 \
 Fullcode akan tampak seperti ini :
 
@@ -258,12 +260,12 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 #
-**Step 8.**
+**Step 9.**
 \
 Jika sukses maka akan tampil seperti ini :
 |![](https://github.com/gzeinnumer/MultiPermition/blob/master/assets/example1.jpg)|![](https://github.com/gzeinnumer/MultiPermition/blob/master/assets/example2.jpg)|![](https://github.com/gzeinnumer/MultiPermition/blob/master/assets/example3.jpg)|
 |--|--|--|
-|Request Permition 1 |Request Permition 2 |Jika sudah diizinkan maka akan keluar Toass `AllGranted` |
+|Request Permition 1 |Request Permition 2 |Jika sudah diizinkan maka akan keluar Toast `AllGranted` |
 
 ---
 
