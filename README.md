@@ -181,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Izin sudah diberikan", Toast.LENGTH_SHORT).show();
             onSuccessCheckPermitions();
         } else {
-            Toast.makeText(this, "Berikan izin untuk membuat folder terlebih dahulu", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Berikan izin untuk melanjutkan ke tahap berikutnya", Toast.LENGTH_SHORT).show();
         }
     }
     
@@ -212,7 +212,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Izin sudah diberikan", Toast.LENGTH_SHORT).show();
             onSuccessCheckPermitions();
         } else {
-            Toast.makeText(this, "Berikan izin untuk membuat folder terlebih dahulu", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Berikan izin untuk melanjutkan ke tahap berikutnya", Toast.LENGTH_SHORT).show();
         }
     }
 
