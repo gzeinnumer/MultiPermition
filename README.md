@@ -6,6 +6,7 @@
 
 #
 **Step 1.**
+
 **Manifest.** Tambahkan permition ke file manifest. Zein sarankan untuk menambahkan requestLegacyExternalStorage=true jika android kamu sudah android 10.
 
 ```xml
