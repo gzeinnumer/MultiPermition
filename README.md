@@ -23,9 +23,9 @@
 
 #
 **Step 1.**
- 
 \
-Tambahkan array permition yang dibutuhkan : \
+Tambahkan array permition yang dibutuhkan :
+
 **First Activity.** letakan permition pada saat awal activity dimulai, disini Zein meletakannya di `MainActivity`.
 
 ```java
@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
 
 #
 **Step 2.**
-
 \
 Tambahkan function untuk mengecek permition apps apakah semua permition sudah diberikan izin, Jika belum diberikan izin maka akan keluar popup. Silahkan berikan izin dengan menekan `allow` :
 
@@ -138,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 #
-**Step 5.** Create Folder
+**Step 5.**
 \
 Jika `onRequestPermissionsResult` sudah mendapat permition yang dibutuhkan, maka kita akan membuat dan menjalankan function `onSuccessCheckPermitions`. **Cukup 1 kali penggunaan saja di FirstActivity(Acctivity yang pertama berjalan)**:
 
