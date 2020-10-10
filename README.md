@@ -1,8 +1,12 @@
+<p align="center">
+  <img src="https://bordencom.com/wp-content/uploads/2016/03/Do-You-Have-Permission.png" width="400"/>
+</p>
+
 <h1 align="center">
     MultiPermition
 </h1>
 
-**Contoh Multi Check Permissions.** Request permition secara bersamaan, Zein sarankan untuk requestnya dijalankan di activity yang pertama aktif, disini Zein masukan ke MainActivity :
+**Example Multi Check Permissions.** Request permition secara bersamaan, Zein sarankan untuk requestnya dijalankan di activity yang pertama aktif, disini Zein masukan ke MainActivity :
 
 #
 **Step 1.**
@@ -24,8 +28,7 @@
 ```
 
 #
-**Step 2.**
-\
+#### Step 2.
 Tambahkan array permition yang dibutuhkan :
 
 **First Activity.** letakan permition pada saat awal activity dimulai, disini Zein meletakannya di `MainActivity`.
