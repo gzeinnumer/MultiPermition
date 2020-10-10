@@ -7,11 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c52001fe-bb0c-4e52-a070-1034a600c4fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator-enh.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -134,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599579750012</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="readme">
+      <created>1602339451389</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602339451389</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -142,13 +144,15 @@
     <option name="LAST_COMMIT_MESSAGE" value="readme" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="908" y="112" key="CommitChangelistDialog2" timestamp="1599580355338">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state x="-1652" y="-57" key="CommitChangelistDialog2" timestamp="1602339449536">
+      <screen x="-2560" y="-169" width="2560" height="1040" />
     </state>
+    <state x="-1652" y="-57" key="CommitChangelistDialog2/-2560.-169.2560.1040/0.0.1366.728@-2560.-169.2560.1040" timestamp="1602339449536" />
     <state x="908" y="112" key="CommitChangelistDialog2/0.0.2560.1040/2622.170.1304.768@0.0.2560.1040" timestamp="1599580355338" />
-    <state x="872" y="251" key="Vcs.Push.Dialog.v2" timestamp="1599580365993">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state x="-1688" y="82" key="Vcs.Push.Dialog.v2" timestamp="1602342542598">
+      <screen x="-2560" y="-169" width="2560" height="1040" />
     </state>
+    <state x="-1688" y="82" key="Vcs.Push.Dialog.v2/-2560.-169.2560.1040/0.0.1366.728@-2560.-169.2560.1040" timestamp="1602342542598" />
     <state x="872" y="251" key="Vcs.Push.Dialog.v2/0.0.2560.1040/2622.170.1304.768@0.0.2560.1040" timestamp="1599580365993" />
   </component>
 </project>

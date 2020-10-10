@@ -6,12 +6,10 @@
     MultiPermition
 </h1>
 
-**Example Multi Check Permissions.** Request permition secara bersamaan, Zein sarankan untuk requestnya dijalankan di activity yang pertama aktif, disini Zein masukan ke MainActivity :
+**Example Multi Check Permissions.** Request Permissions at same time, I recommend to use this step on your `First Activity`, now i use it on `MainActivity` :
 
-#
-**Step 1.**
-
-**Manifest.** Tambahkan permition ke file manifest. Zein sarankan untuk menambahkan requestLegacyExternalStorage=true jika android kamu sudah android 10.
+#### Step 1.
+**Manifest.** add permission ke file manifest. I recommend to add `requestLegacyExternalStorage=true` if you using Android 10.
 
 ```xml
 <manifest >
@@ -29,9 +27,9 @@
 
 #
 #### Step 2.
-Tambahkan array permition yang dibutuhkan :
+Add array permission that you need :
 
-**First Activity.** letakan permition pada saat awal activity dimulai, disini Zein meletakannya di `MainActivity`.
+**First Activity.** put request permission at your first activity, now i use it on `MainActivity`.
 
 ```java
 public class MainActivity extends AppCompatActivity {
@@ -47,9 +45,8 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 #
-**Step 3.**
-\
-Tambahkan function untuk mengecek permition apps apakah semua permition sudah diberikan izin, Jika belum diberikan izin maka akan keluar popup. Silahkan berikan izin dengan menekan `allow` :
+#### Step 3.
+Add function `checkPermissions` to check permission on app, if permission not granted than popup will show and ask to `Allow`. Please click `allow` :
 
 ```java
 public class MainActivity extends AppCompatActivity {
@@ -80,9 +77,8 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 #
-**Step 4.**
-\
-Jika semua akses sudah diberikan maka aplikasi dapat menjalankan proses untuk membuat directory :
+#### Step 4.
+You can check all permition are granted or not with function `onRequestPermissionsResult`, if granted you can run your code :
 
 ```java
 public class MainActivity extends AppCompatActivity {
@@ -95,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 
                 //Do Someting ...
-                //aksi setelah semua permition diberikan
+                //aksi setelah semua permission diberikan
 
             } else {
                 StringBuilder perStr = new StringBuilder();
@@ -112,9 +108,8 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 #
-**Step 5.** 
-\
-Buat dan panggil function `onSuccessCheckPermitions` untuk membuat folder :
+#### Step 5.
+Make and call function `onSuccessCheckPermitions` to run your code :
 
 ```java
 public class MainActivity extends AppCompatActivity {
@@ -142,9 +137,8 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 #
-**Step 6.**
-\
-Jika `onRequestPermissionsResult` sudah mendapat permition yang dibutuhkan, maka kita akan membuat dan menjalankan function `onSuccessCheckPermitions`. **Cukup 1 kali penggunaan saja di FirstActivity(Acctivity yang pertama berjalan)**:
+#### Step 6.
+Add action to function `onSuccessCheckPermitions` :
 
 ```java
 public class MainActivity extends AppCompatActivity {
@@ -162,13 +156,12 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 **notes.** 
-  - Cara ini akan saya pakai disetiap lib yang saya buat dan membutuhkan permition.
-  - Di function `onSuccessCheckPermitions` kita bisa deklarasi apa saja yang kita mau.
+  - I always use this method to get permition for all Libray that i made.
+  - You can modif body of function `onSuccessCheckPermitions`.
   
 #
-**Step 7.**
-\
-Tambahkan function `checkPermissions` di `onCreate` agar setiap activity dijalankan maka akan selalu mengecek apakah izin sudah diberikan :
+#### Step 7.
+Add function `checkPermissions` in `onCreate` to check permission ever time app running :
 
 ```java
 public class MainActivity extends AppCompatActivity {
@@ -196,9 +189,8 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 #
-**Step 8.**
-\
-Fullcode akan tampak seperti ini :
+#### Step 8.
+Fullcode will be like this :
 
 ```java
 public class MainActivity extends AppCompatActivity {
@@ -263,12 +255,11 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 #
-**Step 9.**
-\
-Jika sukses maka akan tampil seperti ini :
+#### Step 9.
+Preview :
 |![](https://github.com/gzeinnumer/MultiPermition/blob/master/assets/example1.jpg)|![](https://github.com/gzeinnumer/MultiPermition/blob/master/assets/example2.jpg)|![](https://github.com/gzeinnumer/MultiPermition/blob/master/assets/example3.jpg)|
 |--|--|--|
-|Request Permition 1 |Request Permition 2 |Jika sudah diizinkan maka akan keluar Toast `AllGranted` |
+|Request Permission 1 |Request Permission 2 |Iff all permission granted Toast `AllGranted` will show |
 
 ---
 
