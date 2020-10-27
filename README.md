@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
   
 #
 #### Step 7.
-Add function `checkPermissions` in `onCreate` to check permission ever time app running :
+Add function `checkPermissions` in `onCreate` to check permission everytime app running :
 
 ```java
 public class MainActivity extends AppCompatActivity {
@@ -259,8 +259,12 @@ public class MainActivity extends AppCompatActivity {
 Preview :
 |![](https://github.com/gzeinnumer/MultiPermition/blob/master/assets/example1.jpg)|![](https://github.com/gzeinnumer/MultiPermition/blob/master/assets/example2.jpg)|![](https://github.com/gzeinnumer/MultiPermition/blob/master/assets/example3.jpg)|
 |--|--|--|
-|Request Permission 1 |Request Permission 2 |Iff all permission granted Toast `AllGranted` will show |
+|Request Permission 1 |Request Permission 2 |If all permission granted Toast `AllGranted` will show |
 
+#
+#### FullCode
+![Java](https://github.com/gzeinnumer/MultiPermition/blob/master/app/src/main/java/com/gzeinnumer/multipermition/MainActivity.java)
+![Manifest](https://github.com/gzeinnumer/MultiPermition/blob/master/app/src/main/AndroidManifest.xml)
 ---
 
 ```
