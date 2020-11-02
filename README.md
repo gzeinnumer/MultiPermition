@@ -263,8 +263,8 @@ Preview :
 
 #
 #### FullCode
-![Java](https://github.com/gzeinnumer/MultiPermition/blob/master/app/src/main/java/com/gzeinnumer/multipermition/MainActivity.java)
-![Manifest](https://github.com/gzeinnumer/MultiPermition/blob/master/app/src/main/AndroidManifest.xml)
+[Java](https://github.com/gzeinnumer/MultiPermition/blob/master/app/src/main/java/com/gzeinnumer/multipermition/MainActivity.java)
+[Manifest](https://github.com/gzeinnumer/MultiPermition/blob/master/app/src/main/AndroidManifest.xml)
 ---
 
 ```
